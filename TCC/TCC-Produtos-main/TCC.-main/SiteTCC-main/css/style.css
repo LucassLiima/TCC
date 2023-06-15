@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+body
+{
+    margin: 0;
+    padding: 0;
+    max-width: 1800px;
+    margin: auto;
+    background-color:whitesmoke;
+    font-family:  'Ubuntu', sans-serif;
+}
+.pagina-inicial
+{
+    max-width: 1600px;
+}
+.conteudo-institucional
+{
+    width: 80%;
+    margin: 80px 80px 0px 80px;
+}
+
+.valores
+{
+    display: flex;
+}
+
+.valores1:not(:first-child), .valores2, .valores3, .valores4
+{
+    margin: 30px;
+}
+
+.valores1
+{
+    margin: 30px 30px 30px 0px;
+}
+
+.destaque{
+    font-size: 5vh;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Cartões ---------------------------------------------------------------------------------*/
+
+.cartões{
+    text-align: center;
+}
+
+.card-pic
+{   
+    /*trocar imagem por uma que tenha maior altura em relação a largura e aumentar a altura maxima*/
+    max-height: 300px;
+    width: 100%;
+    transition: 1s;
+}
+
+.intro
+{
+    height: 100px;
+    width: 439px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: rgb(27, 27, 27, 0.5);
+    color: white;
+    bottom: -501px;
+    transition: 1.4s;
+}
+
+.card
+{
+    max-height: 500px;
+    margin: 50px;
+    box-shadow: 3px 5px 10px rgb(185, 185, 185);
+    overflow: hidden;
+}
+
+.card:hover
+{
+    cursor: pointer;
+}
+
+
+.container
+{
+    display: flex;
+}
+
+.card-title-text
+{
+    margin: 10px;
+    font-size: 40px;
+    transition: 1s;
+}
+
+.card-text
+{
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card:hover .intro{
+    height: 200px;
+    bottom: -501;
+    background-color: rgb(157, 109, 202);
+    opacity: 70%;
+}
+
+.card:hover .card-text
+{
+    opacity: 1;
+    visibility: visible;
+    color: black;
+}
+
+.card:hover .card-pic{
+    transform: scale(1.1);
+
+}
